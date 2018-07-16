@@ -1,0 +1,55 @@
+.header-background {
+    background-color: #fafafa;
+    background-image: url('../assets/images/header-background.jpg');
+    background-repeat: no-repeat;
+    // width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 10.75rem 0;
+    position: relative;
+    // margin-bottom: 4rem;
+    &__list {
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &--desktop {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
+    }
+
+    &--tablet {
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    font-family: @font-default;
+    font-size: 1.6875rem;
+    color: #010000;
+    font-weight: bold;
+}
+
+.title-home {
+    position: absolute;
+    top: 20%;
+    padding: 0 2rem;
+    line-height: 1.1;
+}

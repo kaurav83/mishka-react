@@ -7,45 +7,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/custom.css" media="all" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" -->
+    <!-- crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 500, 600, 700, 800, 900" rel="stylesheet">
     <title>Limoncello</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <!-- Версия с bootstrap -->
-            <div class="container  d-sm-none">
-                <div class="row justify-content-center">
-                    <div class="col-xs">
-                        <div class="mobile-logo">
-                            <a href="/" class="logo">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="35" viewBox="0 0 86 35">
-                                    <image xmlns="http://www.w3.org/2000/svg" id="mishka-logo-mobile.svg_copy" data-name="mishka-logo-mobile.svg copy" width="86"
-                                        height="35" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAQAAACksDUOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBwwVGw47zfSHAAAEBklEQVRYw+2Y0XHbOBCGP2nyHnRwvAqMDkxVEHdgpYIoFZiuwHIFSiqQUoHoCkRXYKYC8SrAPXABLEFQ4l3Oc3Mzt3wguMDu/vsT2iUEc6TghMNRzFr9brKcCdbK/T8A9r2loJxDxF8D+ykbpsTMsl5zxrFPtIY9bxwpfy1fSymvv8ThcDypuR1vonU4zlQCfo/DZUP364+J9ojDiXVKw4aKiiqybtln8kWCHkP2R+VwJ3MVlQRzODbAWsYerGGH440iwBqCrXA4TglJTwMilL+TPBYJWJdx08tTMuN5r0LwCLZUz2OwhjMOx1ppduKr38U++b0G5dgl2Xl9hFRxpyz0i+vBW+DuKlin7PrU3kabYqM0J01NpFpzu0nAnhQr6f7VUk6AXWfAel4jtPUI/MBKV4O1Gt8mIMwIluWSpOsL4CXRbTBAx7eguQegnnKqwX4ZMDSUVo0nnWVSaSfnjMR7pkui/pwG2yg21sHI8PekS5492I9K1/v2vG4T/QVZDtzfy/3TNbNJaSb0luEbscLrVxXfXvM47GC+6d3NgDWX/TYL/F6si4srAf6IVh+SqTUV9kqfbmRvHfmhAh1GW8DPpN6M2nBf2AY7D/Y266ekQ3Wgvm0aKfr+sgKsn+2DnQYrnBScHpSv2iUlJZX0ojNgQoWulF2lAHkMR944yqV7mbRVJ53DUUn1Ow8qpl9VhDzjFT3EgOMrzu2Db0+Pl+OktcOxX1DxAMAq6dqfJfiKGtSqOvOKPKsLEFh1qKq3km6c6+VAJ5vhMbDrv71WQghAJ+1nRR27+TCvU9KL/NMmu592I/biy61Gc57PImyglNnhXg04YjUwfFVLGvJistpYxu2kfYkuXp/paDkAUITq03FRIlhLI8YAr8m6hnnik4lhcwC2EslXE1/XX7kowzr7PYzqZJ0ZPZcXv+1tNk0jGv8Ofblbz6vZQ7CHbAhIj4p3UlpSMZmRl5hap0Y+4uYq0hKWCYe9o+0VQzvBhA1J5gt7N9I8yv2eGZIeGFes+H3wUyuAuC1u1EwbRn62DHDyyYylFdtissXXcbhM3DbUSY8uBtD06lZZRU3v3I6CduQ/VZ7lPsWtj9jCcvIjuk6e2xDSiz/7WinbB/UZ3YSRURqTzPVWXZJeN5i/A+AbB/jAlt8o+DEC542j65oX2c2e03hobHgWqA3QBr48wJoaOGAGc57bBzoehaAmQVKzoukTWDAlhgcM3yfOBZtQGxteR1tnKAVcnP9f/nVZzFhjRj/C9h9+rYVqOvV8sBbLDXay7E9JHn436PYfk6TNxUr0AnQ0/selwZZYbn/hVPseUtPyE+Ln5oL+CB5B3owAN+HQxuQqc+VPj5x0qpno/wpq0HxG+RMIjRgWXXTKmQAAAABJRU5ErkJggg=="
+
+            <div class="mobile-header">
+                <div class="center-block">
+                    <div class="mobile-logo">
+                        <a href="/" class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="35" viewBox="0 0 86 35">
+                                <image xmlns="http://www.w3.org/2000/svg" id="mishka-logo-mobile.svg_copy" data-name="mishka-logo-mobile.svg copy" width="86"
+                                    height="35" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAQAAACksDUOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBwwVGw47zfSHAAAEBklEQVRYw+2Y0XHbOBCGP2nyHnRwvAqMDkxVEHdgpYIoFZiuwHIFSiqQUoHoCkRXYKYC8SrAPXABLEFQ4l3Oc3Mzt3wguMDu/vsT2iUEc6TghMNRzFr9brKcCdbK/T8A9r2loJxDxF8D+ykbpsTMsl5zxrFPtIY9bxwpfy1fSymvv8ThcDypuR1vonU4zlQCfo/DZUP364+J9ojDiXVKw4aKiiqybtln8kWCHkP2R+VwJ3MVlQRzODbAWsYerGGH440iwBqCrXA4TglJTwMilL+TPBYJWJdx08tTMuN5r0LwCLZUz2OwhjMOx1ppduKr38U++b0G5dgl2Xl9hFRxpyz0i+vBW+DuKlin7PrU3kabYqM0J01NpFpzu0nAnhQr6f7VUk6AXWfAel4jtPUI/MBKV4O1Gt8mIMwIluWSpOsL4CXRbTBAx7eguQegnnKqwX4ZMDSUVo0nnWVSaSfnjMR7pkui/pwG2yg21sHI8PekS5492I9K1/v2vG4T/QVZDtzfy/3TNbNJaSb0luEbscLrVxXfXvM47GC+6d3NgDWX/TYL/F6si4srAf6IVh+SqTUV9kqfbmRvHfmhAh1GW8DPpN6M2nBf2AY7D/Y266ekQ3Wgvm0aKfr+sgKsn+2DnQYrnBScHpSv2iUlJZX0ojNgQoWulF2lAHkMR944yqV7mbRVJ53DUUn1Ow8qpl9VhDzjFT3EgOMrzu2Db0+Pl+OktcOxX1DxAMAq6dqfJfiKGtSqOvOKPKsLEFh1qKq3km6c6+VAJ5vhMbDrv71WQghAJ+1nRR27+TCvU9KL/NMmu592I/biy61Gc57PImyglNnhXg04YjUwfFVLGvJistpYxu2kfYkuXp/paDkAUITq03FRIlhLI8YAr8m6hnnik4lhcwC2EslXE1/XX7kowzr7PYzqZJ0ZPZcXv+1tNk0jGv8Ofblbz6vZQ7CHbAhIj4p3UlpSMZmRl5hap0Y+4uYq0hKWCYe9o+0VQzvBhA1J5gt7N9I8yv2eGZIeGFes+H3wUyuAuC1u1EwbRn62DHDyyYylFdtissXXcbhM3DbUSY8uBtD06lZZRU3v3I6CduQ/VZ7lPsWtj9jCcvIjuk6e2xDSiz/7WinbB/UZ3YSRURqTzPVWXZJeN5i/A+AbB/jAlt8o+DEC542j65oX2c2e03hobHgWqA3QBr48wJoaOGAGc57bBzoehaAmQVKzoukTWDAlhgcM3yfOBZtQGxteR1tnKAVcnP9f/nVZzFhjRj/C9h9+rYVqOvV8sBbLDXay7E9JHn436PYfk6TNxUr0AnQ0/selwZZYbn/hVPseUtPyE+Ln5oL+CB5B3owAN+HQxuQqc+VPj5x0qpno/wpq0HxG+RMIjRgWXXTKmQAAAABJRU5ErkJggg=="
+                                />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <i class="material-icons">
+                    menu
+                </i>
+            </div>
+
+            <div class="tablet-header">
+                <div class="tablet-sizes">
+                    <div class="tablet-sizes__top">
+                        <div class="tablet-sizes__left-block">
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149" height="72" viewBox="0 0 149 72">
+                                    <image xmlns="http://www.w3.org/2000/svg" id="mishka-logo-tablet.svg" width="113" height="46" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xlink:href="data:img/png;base64,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"
                                     />
                                 </svg>
                             </a>
                         </div>
+                        <ul class="bigger-sizes__items bigger-sizes__items--tablet">
+                            <li class="border-vertical-right-right border-vertical-right-right--tablet"></li>
+                            <li class="bigger-sizes__item-search bigger-sizes__item-search--search">
+                                <i class="material-icons">
+                                    search
+                                </i>
+                            </li>
+                            <li class="border-vertical-right-left border-vertical-right-left--tablet"></li>
+                            <li class="basket">
+                                <span class="basket__icon">
+                                    <i class="material-icons">
+                                        shopping_basket
+                                    </i>
+                                </span>
+                                <span class="basket__status text-prime">
+                                    Корзина: пока пуста
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
-            <div class="container d-none d-sm-block d-xs-none">
+
+            <div class="container desktop-header">
                 <div class="bigger-sizes">
-                    <div class="row justify-content-between align-items-center">
-                        <ul class="bigger-sizes__items col-md-5">
+                    <div class="bigger-sizes__top">
+                        <ul class="bigger-sizes__items forth">
                             <li>
                                 <a href="" class="basket-sizes__link text-prime">Каталог товаров</a>
                             </li>
-                            <li>
+                            <li class="border-vertical"></li>
+                            <li class="bigger-sizes__item">
                                 <a href="" class="basket-sizes__link text-prime">Вязание на заказ</a>
                             </li>
                         </ul>
 
-                        <div class="col-md-2 text-center">
+                        <div class="center-block twenty">
                             <a href="/" class="logo">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149" height="72" viewBox="0 0 149 72">
                                     <image xmlns="http://www.w3.org/2000/svg" id="mishka-logo-desktop.svg" width="149" height="72" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -54,12 +94,14 @@
                                 </svg>
                             </a>
                         </div>
-                        <ul class="col-md-5 bigger-sizes__items">
-                            <li>
+                        <ul class="bigger-sizes__items forth">
+                            <li class="border-vertical-right-right"></li>
+                            <li class="bigger-sizes__item-search">
                                 <i class="material-icons">
                                     search
                                 </i>
                             </li>
+                            <li class="border-vertical-right-left"></li>
                             <li class="basket">
                                 <span class="basket__icon">
                                     <i class="material-icons">
@@ -76,11 +118,52 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile-menu">
-                <i class="material-icons">
-                    menu
-                </i>
+            <div class="header-background">
+                <ul class="header-background__list">
+                    <li class="header-background__item">
+                        <a href="" class="header-background__link header-background--desktop">
+                            Новые поступления
+                        </a>
+                        <a href="" class="header-background__link header-background--tablet">
+                            Каталог товаров
+                        </a>
+                    </li>
+                    <li class="header-background__item">
+                        <a href="" class="header-background__link  header-background--desktop">
+                            Распродажа
+                        </a>
+                        <a href="" class="header-background__link  header-background--tablet">
+                            Вязание на заказ
+                        </a>
+                    </li>
+                    <li class="header-background__item">
+                        <p class="header-background__text">
+                            Бесплатная доставка по России
+                        </p>
+                    </li>
+                </ul>
+                <h1 class="title title-home">Милые штуки ручной работы для дома</h1>
             </div>
+            <div class="header__goods">
+                    <a href="" class="header__goods-item">
+                        <p class="header__lead-text">Предметы интерьера</p>
+                        <!-- <object class="logo__icon" data="./assets/images/interior.svg" width="50" height="50" type="image/svg+xml"></object> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="60" viewBox="0 0 41 62" class="header__svg">
+                            <image xmlns="http://www.w3.org/2000/svg" id="interior.svg" class="cls-1" width="41" height="62" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAA+CAMAAACBbcLnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUUkID///8UkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAAAAA3RlsHAAAAEnRSTlMAABh4gGhYMFBwEEgIKGAgQDiIFuSCAAAAAWJLR0QSe7xsAAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHDxUuL8cgiYEAAAFLSURBVEjHxdXbroQgDAVQ5SoIBf//Zw/I1RgoD07OziQTx5XYgVK37RVCGSX1ai95w40zxvhQCjaOeEg6kbSXhM1COimnUnbymMqjk2oqVZOazaOrlIiUVZ6IPKvkiORFGobFZGlRabPEykyFRgmohCxRyFiSbkG6W/oF6W+Jl3kXulZmLBTr4hIS5LUkr31+2FrEPj9sLXRfLDMUGrqYl2WC3H0U8nP6O3KzYbDo+IswYbsi8Xk3qAsNGf8FhKYjNk8Gr/z9bUCF+/GjwJQ7w7kUVkO0i9kEC9sL/yiJI4vykbHUAmKExqQpbUA1IlsPHohsRwU+k2JZtiN9IrKNCYmtUpUGW/nyl8r7cCz9s8yJLIU6vEPSdlK8Q/KKigWZCr0WpHuU+UknL0tTXssK26M20Aj2dOlT5Ed1Wv+MHcn3xL8G8v1igh/LP1OvGaA8Z5TaAAAAAElFTkSuQmCC"
+                            />
+                        </svg>
+                    </a>
+                    <a href="" class="header__goods-item">
+                        <p class="header__lead-text">Детские игрушки</p>
+                        <!-- <object class="logo__icon" data="./assets/images/toy-svg.svg" width="50" height="50" type="image/svg+xml"></object> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="61" viewBox="0 0 60 61" class="header__svg">
+                            <image xmlns="http://www.w3.org/2000/svg" id="toy-svg" class="cls-1" width="60" height="61" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA9CAMAAADGfvrlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUUkID///8UkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAAAAA3RlsHAAAAEnRSTlMAAAgoQCBYgFAQMHhgOGhIcBh0DuIhAAAAAWJLR0QSe7xsAAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHDxUvDpJSqJ4AAAJkSURBVEjH7ZfdAq0QEIVtGUR2ev+XPX4yjKjduThXx13lY8xagxibNb6I1IC+/jRthoJU2PT6DjaqbRZewZbAansFbxTWL+BVui+ZeJfrjzAXSgEz8gzda2DhjeCPMAAYryIcRwlPOVUiDmIAjim87jVWQ8fU+OG7ryN4J+IsLetI9vYrTJUNSTLnIlfTpV6ZCyzUpfktNHt97y4w91TZ6YP68g7mQnJRJ/ka1nZnpo7sBZeCt/DikwMPl+poiY4gcFx5+uSOwGzKLwgfG7VvCqWDW3um7keGIfc4JsqGJgi8YNqSrbI5RC1b6NSRdeQ1+8E6XLOxp33EAkZomvjT4cLAIooJNW+zvasXLS04wryEQyJ1ZHIvyVN1mMcaWBoAeK3or+Ot/YrIn3VjMQi0KNoEckU6l2uywrIUVVwoy8svsReFHFW9wB5KPacUszPxKFKO1hLVD1t7JfTsxeqYpTZzT434oYs8p8MwPtasppPNblIIWUQomfl8ambaAhBj2bI8I03Yc5f5sIzOgLK11b31C5rAYXvDSeQklTdwJ5vFcoRLIgZw8CPO5dA+XA86juBGtqtxn+EQLW9Q8ONeEzjkCc+Mq+qPcJGNi3mPGzjvezfsf/jfwvbvYXtnggc4OXhqv1t4W8+zamL8G9hDc9ANS24KW0EvNKNin8Ga97ehwTYzhjcY3j37DW4EWzxf+4trJ9sAxvN1dOslsl3guIHf3rcb2To4b+APl3WUjcBlA3/6TShHaAvj79HzD0o+vCtcj4GffsqibAW27b3/FzieiCe8t/v/b3BYeooVupOnhf8AgT5BYYXin9UAAAAASUVORK5CYII="
+                            />
+                        </svg>
+                    </a>
+                </div>
         </header>
         <main class="content">
             MAIN
