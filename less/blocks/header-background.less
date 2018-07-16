@@ -3,19 +3,50 @@
     background-image: url('../assets/images/header-background.jpg');
     background-repeat: no-repeat;
     // width: 100%;
-    background-size: cover;
-    background-position: center;
-    padding: 10.75rem 0;
+    
     position: relative;
     // margin-bottom: 4rem;
+
+    @media screen and (min-width: 320px) {
+        padding: 10.75rem 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 23.7rem 0;
+        background-size: 72rem 47rem;
+    }
+
     &__list {
         @media screen and (min-width: 320px) {
             display: none;
         }
 
         @media screen and (min-width: 768px) {
-            display: block;
+            display: flex;
+            position: absolute;
+            top: 1.7rem;
+            padding: 0 3rem;
+            width: 100%;
+            align-items: center;
         }
+    }
+
+    &__item:nth-child(2) {
+        @media screen and (min-width: 768px) {
+            margin-left: 2.8rem;
+        }
+    }
+
+    &__link {
+        font-size: .9375rem;
+        color: #000;
+        font-weight: 700;
+    }
+
+    &__item--text {
+        margin-left: auto;
     }
 
     &--desktop {
@@ -42,14 +73,26 @@
 .title {
     text-align: center;
     font-family: @font-default;
-    font-size: 1.6875rem;
     color: #010000;
-    font-weight: bold;
+    
 }
 
 .title-home {
     position: absolute;
-    top: 20%;
-    padding: 0 2rem;
-    line-height: 1.1;
+
+    @media screen and (min-width: 320px) {
+        top: 20%;
+        font-size: 1.6875rem;
+        font-weight: bold;
+        padding: 0 2rem;
+        line-height: 1.1;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 3rem;
+        width: 100%;
+        padding: 0 4rem;
+        line-height: 1;
+        top: 21%;
+    }
 }
