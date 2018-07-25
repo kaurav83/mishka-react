@@ -252,7 +252,10 @@
                     <p class="stuff-week__price">Цена:
                         <span class="stuff-week__price-number">990 руб.</span>
                     </p>
-                    <button class="stuff-week__order button">Заказать</button>
+                    <button class="stuff-week__order button">
+                        Заказать
+                        <div class="button__pulse"></div>
+                    </button>
                 </div>
 
             </section>
@@ -287,7 +290,10 @@
                                 <p class="stuff-week__price">Цена:
                                     <span class="stuff-week__price-number">990 руб.</span>
                                 </p>
-                                <button class="stuff-week__order button">Заказать</button>
+                                <button class="stuff-week__order button">
+                                    Заказать
+                                    <div class="button__pulse"></div>
+                                </button>
                             </div>
                         </div>
 
@@ -358,48 +364,126 @@
             <section class="about-us">
                 <div class="about-us__container">
                     <h2 class="about-us__title second-title">Коротко о нас:</h2>
-                <ul class="about-us__list">
-                    <li class="about-us__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="38" viewBox="0 0 33 38" class="about-us__item-icon">
-                            <image xmlns="http://www.w3.org/2000/svg" id="icon-1.svg" width="33" height="38" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAmCAMAAAB9PwLlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAABBAj6+fMCCA3+9wv2BQz0eF02UAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBEp5XvmNQAAATZJREFUOMt9lFuCwyAIRY3v+KB1/5udqCjQOuUrMUeBe4lKydDGaLFwfXy37Qn7g3BthP+XMA0jnIingHgv4o67nE2MAtIiMpWzCN8OYRkR2jECEfeZKAeiPttM3QUTAbjkhCztRYTGLrDDON8S7yWM/urqfeTJgRPafxNec8LRsT0y2fOhR5mv5YcehQO8W1IsWbvd4cTrrCnTQ6UT8BZ6HJCEeug4BSnOFbt9L9WVKXAYjVYbhD0N5kfblVMKcwKzZygH+LKIafy0pxcQ1ghk9GA8Qy/H+14A5L1RzBcsX4DWbjmj8AW0qFiaNRJ8T734n7Ym5M0WzKXkIT0Pz+Gm6jHTUhIeZY2+8MSBJe1lrb+BTrGWAO5+IIV2nUnMOg47jznq/IYxgvHxdAdp8KPx6oFuu+sPyJsse8ImJXsAAAAASUVORK5CYII="/>
-                        </svg>
-                        <span class="about-us__item-name">Экологически чистые материалы</span>
-                    </li>
-                    <li class="about-us__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="34" viewBox="0 0 35 34" class="about-us__item-icon">
-                            <image xmlns="http://www.w3.org/2000/svg" id="icon-2.svg" width="35" height="34" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAMAAADiW5DOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAACBwr+/fQL9QzzCPYIAQn5LMP6cAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBMvPi4hggAAAYVJREFUOMuFVFdyxSAMFGCKwYB9/8tGBVEymYl/nh9etEUCgPVYd/mPnnA5q4vGmIWI6duf6y/M7XdItlDKiXGhgN0KPbj0fW7HVFxuAG0g/A39wp961sEvqUMMyoMvuUBpimm0mOf2V7ZcHar/mmAKV+3vkFEZiFp4xWkdfH87G8OKzIMWuHKETpiIMjyv2kzQKjy0gxT6iphAYKkOZRAAPNNpMKSG/jhRQwRSkXkSScU6VWSU/LIR5ckiIRfU02XTjdqZpwnPo1aMS+CFPFg1MrYIDysFLh4HT5oJFC9B4wbCkEiAd7VMGqqRTcxuZGtofwZmD2w2lIMeX+AMbGsoCBKnannfjFBDy3gz5gY1EoeRoPoenSoDdg9Mg54JEAXRLiPa0DaM8kqg2ViTKQ3tWYAjotvoMK+gpzGZqjmrOpnU0CR1R6KfHbO6JlNzeHWq2jo7dQVNPrtOlV3n6z7PIBngivY4g0qvJ5U75H7fCfG4E8hY/+9uSeWPu4XvqCBM5x31AylQJ9yVaMm5AAAAAElFTkSuQmCC"/>
-                        </svg>
-                        <span class="about-us__item-name">Связано вручную с любовью и умилением</span>
-                    </li>
-                    <li class="about-us__item">
-                        <!-- <object class="logo__icon" data="./assets/images/icons/icon-3.svg" width="50" height="50" type="image/svg+xml"></object> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="27" viewBox="0 0 47 27" class="about-us__item-icon">
-                            <image xmlns="http://www.w3.org/2000/svg" id="icon-3.svg" width="47" height="27" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAbCAMAAADbEiYlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAAD90GwXAAAAEHRSTlMAAGDfUM+/QIAg768QcJ8w7iqiSAAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxQIEjHdOi2gAAAAlElEQVQ4y83U3QqAIAwF4DX/lqX2/k/bJDG6yRNEdC7jU2y6EbHZ0Bg7EcO6hkl3dx6LUkO6KNBNpjOi9iM/yyB89WFUGH/r4yJLxL2sevBVUJ/arybMu14bB/nUfYL8eR0B8tw9Qz53n7H6lMYLWM94LCgR9HokG2y+fPGvvp+h/09/adPnUXO1+Dofns4fso/m2w6uqDALylU5YQAAAABJRU5ErkJggg=="/>
-                        </svg>
-                        <span class="about-us__item-name">Скандинавский стиль по российской цене</span>
-                    </li>
-                    <li class="about-us__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="23" viewBox="0 0 55 23" class="about-us__item-icon">
-                                <image xmlns="http://www.w3.org/2000/svg" id="icon-4.svg" width="55" height="23" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAXCAMAAACYqSdCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAAM+vEO9QQJ+/j3BgIN+AMK5hmhkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBQVt2Nu9wAAAK9JREFUOMullEkSwyAMBDGLQZjF/P+zwTgFhL3I3HTomhGSQNjlIhRNdLxC9Bdk5yJXgjPLyFUg42tcBTpBgMUCg7w4bXE1WAuLBocoD5KsDz6c0gUXpMzI0COXc6BKjo+zEh8qpGFW59w56U/5PDGyTpydcH42IlWSrnK+PchK86/fbn/ohiHXe8/Hckg25/fdFzuYfGtfNvezvgcBybl7DyVm1u5v8953/5fN/+wDKwUsbk03k5QAAAAASUVORK5CYII="/>
+                    <ul class="about-us__list">
+                        <li class="about-us__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="38" viewBox="0 0 33 38"
+                                class="about-us__item-icon">
+                                <image xmlns="http://www.w3.org/2000/svg" id="icon-1.svg" width="33" height="38" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAmCAMAAAB9PwLlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAABBAj6+fMCCA3+9wv2BQz0eF02UAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBEp5XvmNQAAATZJREFUOMt9lFuCwyAIRY3v+KB1/5udqCjQOuUrMUeBe4lKydDGaLFwfXy37Qn7g3BthP+XMA0jnIingHgv4o67nE2MAtIiMpWzCN8OYRkR2jECEfeZKAeiPttM3QUTAbjkhCztRYTGLrDDON8S7yWM/urqfeTJgRPafxNec8LRsT0y2fOhR5mv5YcehQO8W1IsWbvd4cTrrCnTQ6UT8BZ6HJCEeug4BSnOFbt9L9WVKXAYjVYbhD0N5kfblVMKcwKzZygH+LKIafy0pxcQ1ghk9GA8Qy/H+14A5L1RzBcsX4DWbjmj8AW0qFiaNRJ8T734n7Ym5M0WzKXkIT0Pz+Gm6jHTUhIeZY2+8MSBJe1lrb+BTrGWAO5+IIV2nUnMOg47jznq/IYxgvHxdAdp8KPx6oFuu+sPyJsse8ImJXsAAAAASUVORK5CYII="
+                                />
                             </svg>
-                        <span class="about-us__item-name">Поддержка отечественного производителя</span>
-                    </li>
-                    <li class="about-us__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="27" viewBox="0 0 34 27" class="about-us__item-icon">
-                                <image xmlns="http://www.w3.org/2000/svg" id="icon-5.svg" width="34" height="27" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAMAAAAu7K2VAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAAC2WhVlAAAAD3RSTlMAACCAzxBw75/fQL8wj69yoTsgAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHFAgTFfgi+DAAAACtSURBVCjPrdPREsMQEAXQaxEi0v3/vy1KihB96H1bc2ZHsgsIIak4REmNFF1qAoSIJ5vhHLPd6kQsV7F9HYnkJrKvBYgXobbtKBZmRQxWgvlPZF/f5YcvcivigONZHGEAftEkjvF8EudnGdRcqLwvejoEozOBnxjjy9bNTBQXGZokvgR0u7NKoiLQr+6X5ddQkW6JZTltCPw19d1hTMITyy00ZiTcOuyGpfpEiDf/wScTgy5r4wAAAABJRU5ErkJggg=="/>
+                            <span class="about-us__item-name">Экологически чистые материалы</span>
+                        </li>
+                        <li class="about-us__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="34" viewBox="0 0 35 34"
+                                class="about-us__item-icon">
+                                <image xmlns="http://www.w3.org/2000/svg" id="icon-2.svg" width="35" height="34" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAMAAADiW5DOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAACBwr+/fQL9QzzCPYIAQn5LMP6cAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBMvPi4hggAAAYVJREFUOMuFVFdyxSAMFGCKwYB9/8tGBVEymYl/nh9etEUCgPVYd/mPnnA5q4vGmIWI6duf6y/M7XdItlDKiXGhgN0KPbj0fW7HVFxuAG0g/A39wp961sEvqUMMyoMvuUBpimm0mOf2V7ZcHar/mmAKV+3vkFEZiFp4xWkdfH87G8OKzIMWuHKETpiIMjyv2kzQKjy0gxT6iphAYKkOZRAAPNNpMKSG/jhRQwRSkXkSScU6VWSU/LIR5ckiIRfU02XTjdqZpwnPo1aMS+CFPFg1MrYIDysFLh4HT5oJFC9B4wbCkEiAd7VMGqqRTcxuZGtofwZmD2w2lIMeX+AMbGsoCBKnannfjFBDy3gz5gY1EoeRoPoenSoDdg9Mg54JEAXRLiPa0DaM8kqg2ViTKQ3tWYAjotvoMK+gpzGZqjmrOpnU0CR1R6KfHbO6JlNzeHWq2jo7dQVNPrtOlV3n6z7PIBngivY4g0qvJ5U75H7fCfG4E8hY/+9uSeWPu4XvqCBM5x31AylQJ9yVaMm5AAAAAElFTkSuQmCC"
+                                />
                             </svg>
-                        <span class="about-us__item-name">Увеличивает лайки на фотографиях</span>
-                    </li>
-                    <li class="about-us__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="32" viewBox="0 0 33 32" class="about-us__item-icon">
-                                <image xmlns="http://www.w3.org/2000/svg" id="icon-6.svg" width="33" height="32" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAACCfz2CvMO+/EICPQN9wUBkqcmkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBQyEmnbnAAAALNJREFUOMvtkMESgyAMRFNQSYBo8/8/2w1qCz3UazvTvZBd37BBoqYQzWyad0PzBLeENt/2KLE1SYbJshtOHYFMSgU2Zcq4gGtBtLyIAMAPfIu0gPMCmBehZsXPvGIwW71rJOhMtS2gPsahhSqq5yNHEVCswaEjfDvjuOndr9C6Pp8CImzFdTzXWM4ptnwLdAaHhGQMmOyCsB8idFSi9JbQlfyvJ+lUqfY2NUI/7KF/4luJB38tMGzCDkMRAAAAAElFTkSuQmCC"/>
+                            <span class="about-us__item-name">Связано вручную с любовью и умилением</span>
+                        </li>
+                        <li class="about-us__item">
+                            <!-- <object class="logo__icon" data="./assets/images/icons/icon-3.svg" width="50" height="50" type="image/svg+xml"></object> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="27" viewBox="0 0 47 27"
+                                class="about-us__item-icon">
+                                <image xmlns="http://www.w3.org/2000/svg" id="icon-3.svg" width="47" height="27" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAbCAMAAADbEiYlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAAD90GwXAAAAEHRSTlMAAGDfUM+/QIAg768QcJ8w7iqiSAAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxQIEjHdOi2gAAAAlElEQVQ4y83U3QqAIAwF4DX/lqX2/k/bJDG6yRNEdC7jU2y6EbHZ0Bg7EcO6hkl3dx6LUkO6KNBNpjOi9iM/yyB89WFUGH/r4yJLxL2sevBVUJ/arybMu14bB/nUfYL8eR0B8tw9Qz53n7H6lMYLWM94LCgR9HokG2y+fPGvvp+h/09/adPnUXO1+Dofns4fso/m2w6uqDALylU5YQAAAABJRU5ErkJggg=="
+                                />
                             </svg>
-                        <span class="about-us__item-name">Поставляется в подарочной упаковке</span>
-                    </li>
-                </ul>
+                            <span class="about-us__item-name">Скандинавский стиль по российской цене</span>
+                        </li>
+                        <li class="about-us__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="23" viewBox="0 0 55 23"
+                                class="about-us__item-icon">
+                                <image xmlns="http://www.w3.org/2000/svg" id="icon-4.svg" width="55" height="23" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAXCAMAAACYqSdCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAAM+vEO9QQJ+/j3BgIN+AMK5hmhkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBQVt2Nu9wAAAK9JREFUOMullEkSwyAMBDGLQZjF/P+zwTgFhL3I3HTomhGSQNjlIhRNdLxC9Bdk5yJXgjPLyFUg42tcBTpBgMUCg7w4bXE1WAuLBocoD5KsDz6c0gUXpMzI0COXc6BKjo+zEh8qpGFW59w56U/5PDGyTpydcH42IlWSrnK+PchK86/fbn/ohiHXe8/Hckg25/fdFzuYfGtfNvezvgcBybl7DyVm1u5v8953/5fN/+wDKwUsbk03k5QAAAAASUVORK5CYII="
+                                />
+                            </svg>
+                            <span class="about-us__item-name">Поддержка отечественного производителя</span>
+                        </li>
+                        <li class="about-us__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="27" viewBox="0 0 34 27"
+                                class="about-us__item-icon">
+                                <image xmlns="http://www.w3.org/2000/svg" id="icon-5.svg" width="34" height="27" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAMAAAAu7K2VAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAAC2WhVlAAAAD3RSTlMAACCAzxBw75/fQL8wj69yoTsgAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHFAgTFfgi+DAAAACtSURBVCjPrdPREsMQEAXQaxEi0v3/vy1KihB96H1bc2ZHsgsIIak4REmNFF1qAoSIJ5vhHLPd6kQsV7F9HYnkJrKvBYgXobbtKBZmRQxWgvlPZF/f5YcvcivigONZHGEAftEkjvF8EudnGdRcqLwvejoEozOBnxjjy9bNTBQXGZokvgR0u7NKoiLQr+6X5ddQkW6JZTltCPw19d1hTMITyy00ZiTcOuyGpfpEiDf/wScTgy5r4wAAAABJRU5ErkJggg=="
+                                />
+                            </svg>
+                            <span class="about-us__item-name">Увеличивает лайки на фотографиях</span>
+                        </li>
+                        <li class="about-us__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="32" viewBox="0 0 33 32"
+                                class="about-us__item-icon">
+                                <image xmlns="http://www.w3.org/2000/svg" id="icon-6.svg" width="33" height="32" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAACCfz2CvMO+/EICPQN9wUBkqcmkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcUCBQyEmnbnAAAALNJREFUOMvtkMESgyAMRFNQSYBo8/8/2w1qCz3UazvTvZBd37BBoqYQzWyad0PzBLeENt/2KLE1SYbJshtOHYFMSgU2Zcq4gGtBtLyIAMAPfIu0gPMCmBehZsXPvGIwW71rJOhMtS2gPsahhSqq5yNHEVCswaEjfDvjuOndr9C6Pp8CImzFdTzXWM4ptnwLdAaHhGQMmOyCsB8idFSi9JbQlfyvJ+lUqfY2NUI/7KF/4luJB38tMGzCDkMRAAAAAElFTkSuQmCC"
+                                />
+                            </svg>
+                            <span class="about-us__item-name">Поставляется в подарочной упаковке</span>
+                        </li>
+                    </ul>
                 </div>
-                
             </section>
+            <section class="reviews">
+                <div class="reviews__container">
+                    <div class="reviews__slider">
+                        <h2 class="reviews__title second-title">Отзывы</h2>
+                        <ul class="reviews__list">
+                            <li class="reviews__item sliding">
+                                <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+                                <b class="reviews__author">Анастасия Красильникова</b>
+                                <a href="#" class="reviews__nickname">@misssssiskras</a>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__text">Купила в Мишке зайчика для племянницы на День Рождения. Чудные игрушки отлично подходят для детских игр, приятные на ощупь они развивают моторику, цветовосприятие и фантазию малыша. Выполнены из качественной плюшевой нити, мягкие на ощупь.</p>
+                                <b class="reviews__author">Ивана Зорина</b>
+                                <a href="#" class="reviews__nickname">i_zorina</a>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__text">Качественные изделия, полностью соответствуют описанию на сайте.
+                                    Менеджер быстро выходит на связь после оставленного на сайте заказа, отвечает на все интересующие вопросы, делает дополнительные фотографии товара. Быстрая отправка. 
+                                    Спасибо интернет-магазину!</p>
+                                <b class="reviews__author">Сергей Сыч</b>
+                                <a href="#" class="reviews__nickname">sich91</a>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__text">Заказывала вязаную вазу. Заказ сделала в четверг, товар получила на Новой почте уже в субботу.Заказывала три  разные аксессуара для интерьера. Цвет и размер соответствуют.Большое спасибо Танечке и ее коллегам за оперативность и отзывчивость.Здоровья и развития бизнеса.</p>
+                                <b class="reviews__author">Елена Мазаева</b>
+                                <a href="#" class="reviews__nickname">mazaeva</a>
+                            </li>
+                        </ul>
+                        <div class="reviews__slider-controls">
+                            <button class="reviews__slider-button reviews__slider-button--prev" type="button" id="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="26" viewBox="0 0 50 26" class="arrow-button-svg">
+                                    <image xmlns="http://www.w3.org/2000/svg" id="huge-arrow-left.svg" width="50" height="26" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAaCAQAAABfycdhAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxcOGwvczJwHAAAAZklEQVRIx+3WsQ2AMAxE0Q8TZBRGymYZySOZIgVIiCKCO4SU8wDPdmEZ7tIICtI0ktQyneiMnEjqJD4kioOISYwTkloINkXv56xqwLauK1M90/yfMRxHsNzgyTxmZI/EwRg+r9eIHQO32Gnjcs40AAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </button>
+                            <button class="reviews__slider-button reviews__slider-button--next" type="button" id="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="26" viewBox="0 0 50 26" class="arrow-button-svg">
+                                    <image xmlns="http://www.w3.org/2000/svg" id="huge-arrow-right.svg" width="50" height="26" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAaCAQAAABfycdhAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxcOHQQaKSYQAAAAZElEQVRIx2NgoA4QYDjPMJ9KZuGx4j/Df9paA7GCxtYkwC0ZtWYwW3OeQWDUGjKt+U9jeJ5BgJHhP608BAcXmGhuBQOdgosWzqZD+hp+VuynvRU0KiBHrSAa0KUhQZcmEYHGHQA4mdmJ7u5fGwAAAABJRU5ErkJggg=="/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="reviews__write">
+                            <a   class="reviews__button button">
+                                Написать
+                                <div class="button__pulse"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="7" viewBox="0 0 320 7"
+                class="stuff-week__zigzag-line zigzag-line-after-reviews">
+                <image xmlns="http://www.w3.org/2000/svg" id="zigzag-line-desktop.svg" width="100%" height="7" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAHCAQAAADTs1xBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxEBBgnjmYnWAAAB8ElEQVRYw+3X3ZWyMBCA4TdbAXagHUgHUMFCBUIH2sFuBdoBWoFuBdCBdLCUgB3shREzCT8qF/Kd8+UuPBwuZibDRF22LPlhT429AlbMAd7uB049XvPDHp72hE+8f8IPnHq84kDxtHskfMKbvVSXnACoia2XtqyNnesZifCQsscrYuEe2wHPiEb5kcDYl6QjPaYSnrMUHoojYntBLHzOsdeXZCP9qA/vdZ1IR/mejeU5nvAUcwUche/YtHpxK0CA1DiHsnxst9Pjugw/QE3anON2v5fw1N1Ov+syPSBLvN3vJTx1T9gOeIa9zBK/e/FByEIHJuMLD5hz1uX3zQzV4rei3TBD4Te+xgOCJn0bFEonxuOoe2qXny2vLc8f9rP2VHulPenw2vLfAc+Fx41HAEQ6fTUhCqUDv2yilnT4r+WV5ecO31jfX2svH3YsPw94pt1HMTN8CXh86fIqWaCY8d1EZe54qC7o4kmcmjU7mvzhuf6/43mWm0PBuzvWWI90yXX54x3vvvRP+0NvU3ZOePfGLrbG5BpfuO94aAzO8mtwPb1lx9uveeGEZ5z7hpeDvhATpOu+5YWYGUtngn7eK+Gnkb4Xfmpx33C5uz6JhYeW724z460DwpRuvf3+6q03YjWRW+04f/XWG7ECJnYr/gNJH9Cb72weXQAAAABJRU5ErkJggg=="
+                />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="7" viewBox="0 0 320 7"
+                class="stuff-week__zigzag-tablet zigzag-after-reviews">
+                <image xmlns="http://www.w3.org/2000/svg" id="zigzag-line-desktop.svg" width="100%" height="7" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAHCAQAAADTs1xBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxEBBgnjmYnWAAAB8ElEQVRYw+3X3ZWyMBCA4TdbAXagHUgHUMFCBUIH2sFuBdoBWoFuBdCBdLCUgB3shREzCT8qF/Kd8+UuPBwuZibDRF22LPlhT429AlbMAd7uB049XvPDHp72hE+8f8IPnHq84kDxtHskfMKbvVSXnACoia2XtqyNnesZifCQsscrYuEe2wHPiEb5kcDYl6QjPaYSnrMUHoojYntBLHzOsdeXZCP9qA/vdZ1IR/mejeU5nvAUcwUche/YtHpxK0CA1DiHsnxst9Pjugw/QE3anON2v5fw1N1Ov+syPSBLvN3vJTx1T9gOeIa9zBK/e/FByEIHJuMLD5hz1uX3zQzV4rei3TBD4Te+xgOCJn0bFEonxuOoe2qXny2vLc8f9rP2VHulPenw2vLfAc+Fx41HAEQ6fTUhCqUDv2yilnT4r+WV5ecO31jfX2svH3YsPw94pt1HMTN8CXh86fIqWaCY8d1EZe54qC7o4kmcmjU7mvzhuf6/43mWm0PBuzvWWI90yXX54x3vvvRP+0NvU3ZOePfGLrbG5BpfuO94aAzO8mtwPb1lx9uveeGEZ5z7hpeDvhATpOu+5YWYGUtngn7eK+Gnkb4Xfmpx33C5uz6JhYeW724z460DwpRuvf3+6q03YjWRW+04f/XWG7ECJnYr/gNJH9Cb72weXQAAAABJRU5ErkJggg=="
+                />
+            </svg>
         </main>
         <footer class="footer">
             FOOTER

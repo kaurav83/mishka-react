@@ -1,0 +1,244 @@
+.reviews {
+    @media screen and (min-width: 320px) {
+        padding: 0 1.8rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0 3.125rem;
+        // height: 33.7rem;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background: url('../assets/images/review.jpg') no-repeat;
+            background-size: 50.5%;
+            background-position: left;
+            padding: 16.8rem 21.5rem;
+            z-index: 0;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-right: 0;
+
+        &:before {
+            content: '';
+            padding: 16.5rem 21.5rem;
+        }
+    }
+
+    &__container {
+        @media screen and (min-width: 320px) {
+            margin-top: 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            position: relative;
+            z-index: 1000;
+            top: 7.6rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            // margin: 4rem 7.8rem 0;
+            margin: 2.4rem 0 0 7.5rem;
+            top: 7rem;
+        }
+    }
+
+    &__title {
+        @media screen and (min-width: 320px) {
+            margin-top: 3.6rem;
+            letter-spacing: .05rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 3.5rem;
+            letter-spacing: .05rem;
+            order: 1;
+            width: 50%;
+            margin-top: 0;
+        }
+    }
+
+    &__slider {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+
+    &__list {
+        @media screen and (min-width: 320px) {
+            padding: 1.8rem 0 0 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            order: 3;
+            width: 100%;
+            margin-top: 1.35rem;
+        }
+    }
+
+    &__item {
+        display: none;
+    }
+
+    &__text {
+        @media screen and (min-width: 320px) {
+            line-height: 1.75;
+            font-size: 1.0625rem;
+        }
+    }
+
+    &__author {
+        @media screen and (min-width: 320px) {
+            margin-top: 2rem;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1.0625rem;
+            letter-spacing: .05rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 3.75rem;
+            font-size: 1.125rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 2.55rem;
+        }
+    }
+
+    &__nickname {
+        color: #2196F3;
+        @media screen and (min-width: 320px) {
+            font-size: 1.0625rem;
+            display: inline-block;
+            margin-top: .8rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: fit-content;
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .sliding {
+        display: block;
+        animation: slidingLeft .4s ease-out;
+        @media screen and (min-width: 320px) {
+            min-height: 23rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            min-height: 0;
+        }
+        
+    }
+
+    &__slider-controls {
+        @media screen and (min-width: 320px) {
+            text-align: center;
+            display: flex;
+        }
+
+        @media screen and (min-width: 768px) {
+            order: 4;
+            width: 50%;
+            margin-left: auto;
+            position: relative;
+            top: -2.3rem;
+            justify-content: flex-end;
+        }
+    }
+
+    &__slider-button {
+        @media screen and (min-width: 320px) {
+            margin-top: .8rem;
+            // border: none;
+            width: 100%;
+            background: transparent;
+            padding: .7rem 0;
+            border: .0625rem solid #ccc;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 0;
+            width: auto;
+            margin: 0 1.15rem;
+            border: none;
+        }
+
+        @media screen and (min-width: 1200px) {
+            cursor: pointer;
+        }
+    }
+
+    &__slider-button--prev:active {
+        opacity: .3;
+        outline: none;
+    }
+
+    &__slider-button--next:active {
+        opacity: .3;
+        outline: none;
+    }
+
+    &__write {
+        @media screen and (min-width: 320px) {
+            margin: 2.5rem 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+            order: 2;
+            margin: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: .4rem;
+        }
+    }
+
+    &__button {
+        @media screen and (min-width: 768px) {
+            max-width: 11rem;
+            margin-left: auto;
+        }
+    }
+}
+
+.arrow-button-svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.zigzag-after-reviews {
+    @media screen and (min-width: 768px) {
+        margin-top: 13.5rem
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 16rem;
+    }
+}
+
+.zigzag-line-after-reviews {
+    margin-top: 0;
+}
+
+@keyframes slidingLeft {
+    0% {
+        transform: translateX(3rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
