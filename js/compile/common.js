@@ -91,3 +91,18 @@ function pulse() {
 window.addEventListener('DOMContentLoaded', function () {
     pulse();
 });
+
+// мобильное меню
+function mobileMenu(button, block) {
+    var mobileBtn = document.querySelector(button);
+    var mobileBlock = document.querySelector(block);
+
+    mobileBtn.addEventListener('click', function (event) {
+        mobileBlock.classList.toggle('mobile-menu-block--visible');
+        event.target.classList.toggle('mobile-menu-button--close');
+    });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+    mobileMenu('.mobile-menu-button', '.mobile-menu-block');
+});

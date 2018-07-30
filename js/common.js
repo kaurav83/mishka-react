@@ -92,3 +92,22 @@ function pulse() {
 window.addEventListener('DOMContentLoaded', () => {
     pulse();
 });
+
+// мобильное меню
+function mobileMenu(button, block) {
+    const mobileBtn = document.querySelector(button);
+    const mobileBlock = document.querySelector(block);
+    
+
+    mobileBtn.addEventListener('click', function(event) {
+        mobileBlock.classList.toggle('mobile-menu-block--visible');
+        event.target.classList.toggle('mobile-menu-button--close');
+    });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    mobileMenu(
+        '.mobile-menu-button',
+        '.mobile-menu-block'
+    );
+})
